@@ -67,7 +67,7 @@ body{
         grid-template: auto/ 1fr;
     }
     .productImage{
-        aspect-ratio: 2/2;
+        aspect-ratio: 2/3;
         /* mix-blend-mode: color-burn; */
     }
 
