@@ -1,0 +1,55 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color:#4C6793;
+  font-family: 'Oswald', sans-serif;
+}
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.nav-bar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 25px;
+  height: 70px;
+  background-color: #93BFCF;
+}
+.nav-bar a:hover{
+ color: #1C3879;
+ text-decoration: underline 2px #1C3879;
+}
+
+.Home-page{
+  padding-top: 100px;
+  background:linear-gradient(#93BFCF,#4C6793)   ;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home{
+  color: #93BFCF;
+}
+
+.home a{
+  background-color: #93BFCF;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+.product-details{
+  padding-top: 100px;
+}
