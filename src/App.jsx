@@ -10,6 +10,7 @@ import './App.css'
 import Shop from './pages/Shop';
 import Products from './pages/Products';
 import Home from './pages/Home';
+// import Cart from './pages/Cart';
 // import Productdetails from './pages/Productdetails';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path='/' element={<Home />} />
         <Route path='/shop'  element={<Shop />} />
         <Route path='/shop/:id' element={<Products/>} />
+        {/* <Route path='/cart' element={<Cart/>} /> */}
       </Routes>
     </Router>
   )

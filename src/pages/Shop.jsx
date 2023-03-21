@@ -21,7 +21,7 @@ export default function Shop(){
                     <h4><strong>Price:${each.price}</strong></h4>
                     <p><strong>Rating:<i class="fa-regular fa-star"></i>{each.rating.rate}</strong></p>
                 </div>
-                <Link  className="buy-now">Buy now</Link> 
+                {/* <Link  className="buy-now">Buy now</Link>  */}
                 </Link>
                  </div>
     })

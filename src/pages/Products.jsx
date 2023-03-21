@@ -1,10 +1,11 @@
 
 import React,{useState,useEffect} from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
 import './Products.css'
+// import CartContext from "./CartContext";
 export default function Products() {
     const params = useParams()
-    console.log(params.id)
+    // console.log(params.id)
     const[productDetails,setProductDetails] = useState({})
     useEffect(()=>{
         fetch(`https://fakestoreapi.com/products/${params.id}`)
@@ -13,9 +14,15 @@ export default function Products() {
                         setProductDetails(data)}
             )
     },[])
-    console.log(productDetails)
+    // console.log(productDetails)
+    function addToCartObj(){
+        const cartArray = {productDetails}
+        // console.log(cartArray)
+        return cartArray
+        
+    }
     return(
-
+        <div>
         <div className="product-details">
            <img src={productDetails.image} className="product-details-image"/>
            <div>
@@ -28,8 +35,11 @@ export default function Products() {
            <p className="product-details-title">{productDetails.description}</p>
            <h3>Price:  ${productDetails.price}</h3>
            </div>
-           
         </div>
-        
+        <div className="back">
+        <Link to='/shop' >back</Link>
+        </div>
+        </div>
+       
     )
 }
